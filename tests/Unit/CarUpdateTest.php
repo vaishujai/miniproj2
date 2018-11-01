@@ -18,7 +18,7 @@ class CarUpdateTest extends TestCase
     {
 
         $update= car::find(25);
-        $update->year=2018;
+        $update->year=2000;
         $update->save();
         $this->assertDatabaseHas('cars',["year" => '2000']);
     }
